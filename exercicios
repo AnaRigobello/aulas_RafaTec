@@ -1,0 +1,199 @@
+ex1
+//Declare e inicialize variáveis para armazenar a idade (int), altura
+//(float), e peso (double) de uma pessoa. Atribua valores às
+//variáveis e exiba-os no console.
+
+public class Main {
+    public static void main(String[] args) {
+
+int idade = 18;
+float altura = 1.77f;
+double peso = 51;
+        System.out.printf("ALTURA: " + altura);
+        System.out.println("  PESO: " + peso);
+        System.out.println("IDADE: " + idade);
+    }
+}
+
+ex2
+//Crie um programa que declare duas variáveis inteiras para
+//representar a quantidade de horas trabalhadas e o valor pago
+//por hora. Calcule o salário total (int) multiplicando essas duas
+//variáveis e exiba o resultado no console.
+
+public class Main {
+    public static void main(String[] args) {
+        // Declaração e inicialização das variáveis
+        int horasTrabalhadas = 40;  // quantidade de horas trabalhadas
+        int valorPorHora = 15;      // valor pago por hora
+
+        // Cálculo do salário total
+        int salarioTotal = horasTrabalhadas * valorPorHora;
+
+        // Exibindo o resultado no console
+        System.out.println("Horas Trabalhadas: " + horasTrabalhadas);
+        System.out.println("Valor por Hora: " + valorPorHora);
+        System.out.println("Salário Total: " + salarioTotal);
+    }
+}
+
+ex3
+//Declare uma variável do tipo int e atribua a ela um valor. Em
+//seguida, crie uma variável do tipo double e atribua a ela o valor
+//da variável int. Exiba o valor da variável double no console.
+
+public class Main {
+    public static void main(String[] args) {
+                int valorInteiro = 42;  // Valor inteiro
+                double valorDouble = valorInteiro;  // O valor é automaticamente convertido para double
+                // Exibindo o valor da variável double no console
+                System.out.println("Valor da variável double: " + valorDouble);
+            }
+        }
+
+ex4
+//Declare uma variável do tipo double com um valor fracionado.
+//Realize o casting explícito para uma variável do tipo int e exiba
+//ambos os valores no console
+
+public class Main {
+    public static void main(String[] args) {
+                // Declaração e inicialização da variável double com um valor fracionado
+                double valorDouble = 5.25;  // Valor fracionado
+
+                // Realizando o casting explícito para uma variável do tipo int
+                int valorInt = (int) valorDouble;  // Casting explícito de double para int
+
+                // Exibindo os valores no console
+                System.out.println("Valor da variável double: " + valorDouble);
+                System.out.println("Valor da variável int após casting: " + valorInt);
+            }
+        }
+
+ex5
+//Crie um programa que declare três variáveis inteiras para
+//representar as notas de três provas. Calcule e exiba a soma total
+//das notas.
+
+public class Main {
+    public static void main(String[] args) {
+
+                int nota1 = 10;
+                int nota2 = 5;
+                int nota3 = 7;
+                int somaTotal = nota1 + nota2 + nota3;
+
+                System.out.println("soma das notas " + somaTotal);
+
+            }
+        }
+
+
+ex6
+//Declare duas variáveis inteiras com valores diferentes.
+//Compare-as utilizando operadores de comparação (>, <, >=, <=,
+//==, !=) e exiba os resultados das comparações no console
+
+public class Main {
+    public static void main(String[] args) {
+
+                int var1 = 10;
+                int var2 = 20;
+
+        System.out.println("var1 > var2 " + (var1 > var2)); //falso
+        System.out.println("var1 < var2 " + (var1 < var2)); //vdd
+        System.out.println("var1 >= var2 " + (var1 >= var2)); //falso
+        System.out.println("var1 <= var2 " + (var1 <= var2)); //vdd
+        System.out.println("var1 == var2 " + (var1 == var2)); //falso
+        System.out.println("var1 != var2 " + (var1 != var2)); //vdd
+            }
+        }
+
+        ex7
+
+        //Crie um programa que declare três variáveis booleanas
+//representando condições quaisquer (ex: cond1, cond2, cond3).
+//Utilize os operadores lógicos AND (&&) e OR (||) para combinar
+//essas condições e exiba os resultados no console.
+
+public class Main{
+    public static void main(String[] args) {
+        // Declarando as variáveis inteiras com valores diferentes
+        int a = 10;
+        int b = 20;
+
+        // Comparando as variáveis e armazenando os resultados em variáveis booleanas
+        boolean maior = a > b;       // false
+        boolean menor = a < b;       // true
+        boolean maiorOuIgual = a >= b; // false
+        boolean menorOuIgual = a <= b; // true
+        boolean igual = a == b;      // false
+        boolean diferente = a != b;  // true
+
+        // Exibindo os resultados das comparações
+        System.out.println("a > b: " + maior);
+        System.out.println("a < b: " + menor);
+        System.out.println("a >= b: " + maiorOuIgual);
+        System.out.println("a <= b: " + menorOuIgual);
+        System.out.println("a == b: " + igual);
+        System.out.println("a != b: " + diferente);
+    }
+}
+
+
+ex8
+//Declare duas variáveis do tipo float para armazenar a largura e a
+//altura de um retângulo. Calcule a área do retângulo
+//multiplicando essas variáveis e exiba o resultado.
+
+public class Main{
+    public static void main(String[] args) {
+        // Declarando as variáveis inteiras com valores diferentes
+        float largura = 30;
+        float altura = 95;
+
+     float area = largura * altura;
+        System.out.println("a área do retangulo é de: " + area);
+    }
+}
+
+ex9
+//Declare uma variável do tipo float e atribua um valor
+//fracionado. Em seguida, declare uma variável do tipo long e
+//atribua a ela o valor da variável float usando casting explícito.
+//Por fim, declare uma variável do tipo double e atribua a ela o
+//valor da variável long (casting implícito). Exiba todos os valores
+//no console.
+public class Main {
+    public static void main(String[] args) {
+
+        float valorFloat = 15.92f;
+        long valorLong = (long) valorFloat;
+        double valorDouble = valorLong;
+
+        System.out.println("Valor Float: " + valorFloat); // Exibe 15.92
+        System.out.println("Valor Long: " + valorLong); // Exibe 16 (parte fracionária é truncada)
+        System.out.println("Valor Double: " + valorDouble); // Exibe 16.0
+    }
+}
+
+ex10
+//Declare uma variável do tipo short e atribua a ela um valor
+//pequeno. Declare uma variável do tipo int e atribua a ela o valor
+//da variável short (casting implícito). Depois, declare uma
+//variável do tipo byte e atribua a ela o valor da variável short
+//usando casting explícito. Exiba todos os valores no console.
+public class Main {
+    public static void main(String[] args) {
+
+        short valorShort = 155;
+        int valorInt = valorShort;
+        byte valorByte = (byte) valorShort;
+
+        System.out.println("Valor Short: " + valorShort);
+        System.out.println("Valor int: " + valorInt);
+        System.out.println("Valor Byte: " + valorByte);
+    }
+}
+
+0
