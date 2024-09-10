@@ -1,0 +1,81 @@
+//SEMAFARO 01
+
+package aula10;
+
+public class aula {
+    public static void main(String[] args) {
+
+String corSem = "AMARELO";
+
+if (corSem == "VERDE") {
+    System.out.println("VERDE, SIGA!");
+}
+    if (corSem == "AMARELO") {
+        System.out.println("AMARELO, ATENÇÃO!");
+    }
+
+        if (corSem == "VERMELHO") {
+            System.out.println("VERMELHO, PARE!");
+        }
+
+        }
+
+    }
+
+//SEMAFARO 02
+
+package aula10;
+
+public class aula {
+    public static void main(String[] args) {
+
+        String corSem = "VERDE";
+
+        if (corSem == "VERDE") {
+            System.out.println("SIGA!");
+        } else {
+            if (corSem == "AMARELO") {
+                System.out.println("AMARELO, ATENÇÃO!");
+            } else {
+                if (corSem == "VERMELHO") {
+                    System.out.println("PARE!");
+                } else {
+                    System.out.println("COR INVÁLIDA!");
+                }
+            }
+        }
+    }
+}
+
+//A diferença entre os dois é que o primeiro não mostra se o usuáro inserir uma 
+//cor que não está selecionada pelo programa, dando assim 'cor inválida'!
+
+//exemplo 03:
+
+package aula10;
+public class aula {
+    public static void main(String[] args) {
+        int idade = 10;
+        String maioridadde;
+       maioridadde = idade > 18  ? "maior de idade" : "menor de idade";
+        System.out.println(maioridadde);
+
+    }
+}
+
+//exemplo 04:
+
+package aula10;
+public class aula {
+    public static void main(String[] args) {
+
+        float preco = 100;
+        float desconto;
+        desconto = preco>80 ? 0.25f : 0;
+        System.out.println("valor com desconto = " + (preco - preco * desconto));
+
+    }
+}
+
+
+
