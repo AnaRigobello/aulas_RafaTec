@@ -77,5 +77,81 @@ public class aula {
     }
 }
 
+//exemplo 05
+public class aula {
+    public static void main(String[] args) {
+
+       int entrada = 2;
+
+        System.out.println("DIGITE UM NUMERO: ");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("3");
+
+        switch (entrada) {
+            case 1:
+                System.out.println("Para inserir seu CPF");
+                break;
+            case 2:
+                System.out.println("Para inserir seu RG");
+                break;
+            case 3:
+                System.out.println("Para inserir seu NOME");
+                break;
+            default:
+                System.out.println("inválido");
+        }
+    }
+}
+
+
+//exercicio 01 (Estrutura de Decisão e Repetição)
+
+package EX_ESTRUTURA_REPETICAO;
+
+public class EXERCICIOS {
+    public static void main(String[] args) {
+/////////////////////////////////////////////////////////////exercicio01/////////////////////////////////////////////////////////////////////////////
+
+//Crie um programa que receba a idade de um usuário e determine se
+//ele pode acessar um sistema. Para acessar, a idade deve ser maior ou
+//igual a 18 anos. Exiba uma mensagem informando se o acesso é
+//permitido ou negado.
+
+        int idade = -2;
+
+        if(idade >=18){
+            System.out.println("VOCE PODE ACESSAR");
+        }else if(idade >0 && idade < 18) {
+            System.out.println("VOCE NÃO PODE ACESSAR");
+        }else {
+            System.out.println("NUMERO INVÁLIDO");
+        }
+
+
+    }
+}
+
+//exercicio 02 *EDITAR!!!!!!!!!!!!!!!
+
+/////////////////////////////////////////////////////////////exercicio02/////////////////////////////////////////////////////////////////////////////
+
+//Desenvolva um programa que calcule o valor final de uma compra. Se
+//o valor da compra for maior que R$100, aplique um desconto de 10%.
+//Caso contrário, não aplique desconto. Exiba o valor final a ser pago.
+public class EXERCICIOS {
+    public static void main(String[] args) {
+float preco = 500;
+
+float desconto;
+
+desconto = preco > 100 ? (float) 0.10 : 0;
+
+ System.out.println ("valor de desconto de ") + (preco - preco * desconto));
+        }
+        }
+
+
+
 
 
