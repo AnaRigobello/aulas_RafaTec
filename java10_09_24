@@ -147,9 +147,47 @@ float desconto;
 
 desconto = preco > 100 ? (float) 0.10 : 0;
 
- System.out.println ("valor de desconto de ") + (preco - preco * desconto));
+ System.out.println ("valor de desconto de " + (preco - preco * desconto));
         }
         }
+
+//exercicio 03
+
+/////////////////////////////////////////////////////////////exercicio03/////////////////////////////////////////////////////////////////////////////
+
+
+//Crie um programa que receba um código de produto (int) e, utilizando
+uma estrutura switch, classifique-o em uma das seguintes categorias:
+1 - Eletrônicos, 2 - Alimentos, 3 - Vestuário. Exiba a categoria
+correspondente ao código.
+
+public class ex3 {
+    public static void main(String[] args) {
+//Crie um programa que receba um código de produto (int) e, utilizando
+//uma estrutura switch, classifique-o em uma das seguintes categorias:
+//1 - Eletrônicos, 2 - Alimentos, 3 - Vestuário. Exiba a categoria
+//correspondente ao código.
+        int codigoProd = 9;
+
+        System.out.println("100");
+        System.out.println("81");
+        System.out.println("98");
+
+        switch (codigoProd) {
+            case 100:
+                System.out.println("Eletrônicos");
+                break;
+            case 81:
+                System.out.println("Alimentos");
+                break;
+            case 98:
+                System.out.println("Vestuário");
+                break;
+            default:
+                System.out.println("Resultado: Categoria não identificada");
+        }
+    }
+}
 
 
 
